@@ -1,0 +1,26 @@
+.footer {
+    background-color: #343a40;
+    color: #f8f9fa;
+    padding: 0.5rem 0;
+  }
+  
+  .footer-logo img {
+    height: 40px; /* Adjust the height of the logo */
+  }
+  
+  .footer-description {
+    text-align: center;
+    flex-grow: 1; /* This will push the social media links to the right */
+  }
+  
+  .footer-social a {
+    font-size: 1.5rem;
+    margin: 0 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-description {
+      flex-grow: 0;
+    }
+  }
+  

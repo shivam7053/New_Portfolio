@@ -86,12 +86,12 @@ const Chatbox = ({ showChatbox, onClose }) => {
       setUserName(userInput);
       response = `Nice to meet you, ${userInput}! How can I assist you today? You can ask me about my certificates, about me, or my projects.`;
     } else {
-      if (userInput.toLowerCase().includes('certificate')) {
-        response = 'You can check my certificates <a href="/certificates" target="_blank" rel="noopener noreferrer">here</a>.';
-      } else if (userInput.toLowerCase().includes('about me')) {
-        response = 'Here\'s a bit about me <a href="/about" target="_blank" rel="noopener noreferrer">link</a>.';
-      } else if (userInput.toLowerCase().includes('projects')) {
-        response = 'I have projects in Web Development and App Development. You can check my projects <a href="/projects" target="_blank" rel="noopener noreferrer">here</a>. Which one would you like to know about?';
+      if (userInput.toLowerCase().includes('certificate' || 'certificates')) {
+        response = 'You can check my certificates <a href="https://shivamkoli-engg.netlify.app/certificates" target="_blank" rel="noopener noreferrer">here</a>.';
+      } else if (userInput.toLowerCase().includes('about me' || 'about' || 'about you')) {
+        response = 'Here\'s a bit about me <a href="https://shivamkoli-engg.netlify.app/about" target="_blank" rel="noopener noreferrer">here</a>.';
+      } else if (userInput.toLowerCase().includes('projects' || "project")) {
+        response = 'This is my projects. You can check my projects <a href="https://shivamkoli-engg.netlify.app/projects" target="_blank" rel="noopener noreferrer">here</a>. Which one would you like to know about?';
       } else {
         response = 'I\'m sorry, I didn\'t quite understand that. Can you ask about my certificates, about me, or my projects?';
       }

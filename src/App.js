@@ -11,8 +11,7 @@ import Footer from '../src/components/Footer.js';
 import Certificates from './components/certificates.js'; // Ensure correct case
 import Chatbox from './chatbot/Chatbox.js';
 import ChatIcon from './chatbot/ChatIcon.js';
-import Appdeveloper from './projects/Appdev.js';
-import Webdeveloper from './projects/Webdev.js'
+
 
 
 function App() {
@@ -26,8 +25,6 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/certificates" element={<Certificates />} />
-        <Route path="/app-project" element={<Appdeveloper />} />
-        <Route path="/web-project" element={<Webdeveloper />} />
       </Routes>
       <Footer />
       <Chatbox showChatbox={showChatbox} onClose={() => setShowChatbox(false)} />

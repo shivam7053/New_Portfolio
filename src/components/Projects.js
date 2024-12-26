@@ -3,35 +3,56 @@ import ProjectCard from './ProjectCard';
 import { Container, Row, Col } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import projectsBackground from '../assets/projects-background.jpg';
-import webdev from '../projects/webdev.png'
-import appdev from '../projects/appdev.png'
-// import aidev from '../projects/aidev.webp'
+
+
 
 
 // Static project data
 const projects = [
   {
     id: 1,
-    title: 'Web Development',
-    description: 'Projects in Web domain',
-    image: webdev,
-    link: '/web-project'
+    name: 'Quiz',
+    description: 'A Quiz Game',
+    imageUrl:require('../components/projects/quiz.png') , // Use the imported image directly
+    link: 'https://quiz-reactjs-shivam.netlify.app/',
   },
   {
     id: 2,
-    title: 'App Development',
-    description: 'Project in Mobile App domain',
-    image: appdev,
-    link: '/app-project'
+    name: 'ML Platform',
+    description: 'A Platform to train machine learning models on your dataset',
+    imageUrl: require('../components/projects/ml-platform.png'), // Dynamically require the image
+    link: 'https://ml-platform-latest.onrender.com/',
   },
-  // {
-  //   id: 3,
-  //   title: 'AI Development',
-  //   description: 'Project in Artificial Intelligence',
-  //   image: aidev,
-  //   link: '/ai-project'
-  // }
+  {
+    id: 3,
+    name: 'Journal',
+    description: 'A Journal App',
+    imageUrl: require('../components/projects/journal.png'), // Dynamically require
+    link: 'https://journal-mern-front.onrender.com/',
+  },
+  {
+    id: 4,
+    name: 'Maths Solver',
+    description: 'A Maths Solver using custom nn model',
+    imageUrl: require('../components/projects/maths.png'),
+    link: 'https://maths-solver-1.onrender.com/',
+  },
+  {
+    id: 5,
+    name: 'Shivu Store',
+    description: 'A simple Ecomm Website',
+    imageUrl: require('../components/projects/shivustore.png'),
+    link: 'https://shivustore.netlify.app/',
+  },
+  {
+    id: 6,
+    name: 'Portfolio-Nextjs',
+    description: 'Portfolio using next.js',
+    imageUrl: require('../components/projects/Port-Next.png'),
+    link: 'https://shivamkoli108.netlify.app/',
+  },
 ];
+
 
 function Projects() {
   return (

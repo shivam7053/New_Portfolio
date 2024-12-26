@@ -92,10 +92,6 @@ const Chatbox = ({ showChatbox, onClose }) => {
         response = 'Here\'s a bit about me <a href="/about" target="_blank" rel="noopener noreferrer">link</a>.';
       } else if (userInput.toLowerCase().includes('projects')) {
         response = 'I have projects in Web Development and App Development. You can check my projects <a href="/projects" target="_blank" rel="noopener noreferrer">here</a>. Which one would you like to know about?';
-      } else if (userInput.toLowerCase().includes('web development || wev projects')) {
-        response = 'Here are my web development projects: <a href="/web-project" target="_blank" rel="noopener noreferrer">Web Projects</a>.';
-      } else if (userInput.toLowerCase().includes('app development' || 'app projects')) {
-        response = 'Here are my app development projects: <a href="/app-project" target="_blank" rel="noopener noreferrer">App Projects</a>.';
       } else {
         response = 'I\'m sorry, I didn\'t quite understand that. Can you ask about my certificates, about me, or my projects?';
       }
